@@ -28,3 +28,8 @@ function listTodo() {
     element.addEventListener('click', e => handleDelete(e));
   });
 }
+
+function handleDelete(event) {
+    todoList.splice(Number(event.target['id']), 1);
+    listTodo();
+}
