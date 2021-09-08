@@ -37,3 +37,7 @@ function newTodo(event) {
   }
   
   listTodo();
+function handleDelete(event) {
+    todoList.splice(Number(event.target['id']), 1);
+    listTodo();
+}
